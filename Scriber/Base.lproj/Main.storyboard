@@ -58,6 +58,9 @@
                                         <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GMZ-Fi-Stx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAY &amp; SCRIBE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmZ-aU-4Kd">
                                 <rect key="frame" x="117" y="623" width="141" height="24"/>
@@ -101,6 +104,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="fmZ-aU-4Kd" secondAttribute="trailing" constant="101" id="xYh-Uq-628"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activitySpinner" destination="0Gj-rx-aVk" id="Pwo-hG-mF0"/>
+                        <outlet property="transcriptionTextField" destination="Wyi-5c-3Y9" id="4on-SM-q39"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

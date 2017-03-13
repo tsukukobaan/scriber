@@ -24,6 +24,7 @@
 		344B544C1E764E8F001B45CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		344B544E1E764E8F001B45CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		344B54571E765149001B45CC /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		344B54591E765501001B45CC /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +57,11 @@
 		344B54411E764E8F001B45CC /* Scriber */ = {
 			isa = PBXGroup;
 			children = (
+				344B545A1E765511001B45CC /* Resource */,
 				344B54561E76511B001B45CC /* Model */,
 				344B54551E7650A5001B45CC /* Controller */,
 				344B54541E76509D001B45CC /* View */,
 				344B54421E764E8F001B45CC /* AppDelegate.swift */,
-				344B54441E764E8F001B45CC /* ViewController.swift */,
 				344B54461E764E8F001B45CC /* Main.storyboard */,
 				344B54491E764E8F001B45CC /* Assets.xcassets */,
 				344B544B1E764E8F001B45CC /* LaunchScreen.storyboard */,
@@ -80,6 +81,7 @@
 		344B54551E7650A5001B45CC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				344B54441E764E8F001B45CC /* ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -89,6 +91,14 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		344B545A1E765511001B45CC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				344B54591E765501001B45CC /* test.m4a */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +133,7 @@
 				TargetAttributes = {
 					344B543E1E764E8F001B45CC = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Y94U73RFC7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -212,6 +223,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -261,6 +273,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -286,9 +299,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Y94U73RFC7;
 				INFOPLIST_FILE = Scriber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Scriber;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Scriber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -298,9 +314,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Y94U73RFC7;
 				INFOPLIST_FILE = Scriber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Scriber;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Scriber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -325,6 +344,7 @@
 				344B54531E764E8F001B45CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
