@@ -13,6 +13,7 @@
 		344B544A1E764E8F001B45CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344B54491E764E8F001B45CC /* Assets.xcassets */; };
 		344B544D1E764E8F001B45CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344B544B1E764E8F001B45CC /* LaunchScreen.storyboard */; };
 		344B54581E765149001B45CC /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B54571E765149001B45CC /* CircleButton.swift */; };
+		344BED5A1E767C7700772A0D /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 344BED591E767C7700772A0D /* test.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +25,7 @@
 		344B544C1E764E8F001B45CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		344B544E1E764E8F001B45CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		344B54571E765149001B45CC /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
-		344B54591E765501001B45CC /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4a; sourceTree = "<group>"; };
+		344BED591E767C7700772A0D /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +97,7 @@
 		344B545A1E765511001B45CC /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				344B54591E765501001B45CC /* test.m4a */,
+				344BED591E767C7700772A0D /* test.m4a */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -161,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344BED5A1E767C7700772A0D /* test.m4a in Resources */,
 				344B544D1E764E8F001B45CC /* LaunchScreen.storyboard in Resources */,
 				344B544A1E764E8F001B45CC /* Assets.xcassets in Resources */,
 				344B54481E764E8F001B45CC /* Main.storyboard in Resources */,

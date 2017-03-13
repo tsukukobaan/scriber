@@ -23,6 +23,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         activitySpinner.isHidden = true
+        print("view loaded!")
     }
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
@@ -34,12 +35,15 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     func requestSpeechAuth() {
         SFSpeechRecognizer.requestAuthorization { authStatus in
             if authStatus == SFSpeechRecognizerAuthorizationStatus.authorized {
-                if let path = Bundle.main.url(forResource: "test", withExtension: "m4a") {
+                print("speech recognizer authorized!")
+                if let path = Bundle.main.url(forResource:"test", withExtension: "m4a") {
+                    print("path configured!")
                     do {
                         let sound = try AVAudioPlayer(contentsOf: path)
                         self.audioPlayer = sound
                         self.audioPlayer.delegate = self
                         sound.play()
+                        print("sound played?")
                     } catch {
                         print("Error!")
                     }
@@ -56,6 +60,10 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
                     }
                     
                 }
+                let test = Bundle.main.url(forResource:"test", withExtension: "m4a")
+                if test == nil {
+                    print("found nil inside path")
+                }
             }
             
         }
@@ -64,6 +72,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func playBtnPressed(_ sender: Any) {
         activitySpinner.isHidden = false
         activitySpinner.startAnimating()
+        print("button pressed!")
         requestSpeechAuth()
     }
 
